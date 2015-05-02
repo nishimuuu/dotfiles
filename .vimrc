@@ -28,7 +28,7 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
   call neobundle#rc(expand('~/.vim/bundle/'))
 endif
-
+NeoBundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
 NeoBundle 'vim-scripts/Vim-R-plugin'
 NeoBundle 'eravandew/screen'
 NeoBundle 'Shougo/neobundle.vim'
@@ -486,3 +486,12 @@ au BufWrite /private/etc/pw.* set nowritebackup
 "markdownの設定
 "let g:vim_markdown_folding_disabled=1
 
+"TeXの設定
+filetype plugin on
+let tex_flavor = 'latex'
+set grepprg=grep\ -nH\ $*
+set shellslash
+let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_CompileRule_dvi = 'platex --interaction=nonstopmode $*'
+let g:Tex_CompileRule_pdf = 'dvipdfmx $*.dvi'
+let g:Tex_FormatDependency_pdf = 'dvi,pdf'

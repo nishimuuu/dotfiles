@@ -54,10 +54,13 @@ alias gra='open -a OmniGraffle'
 alias gis='open -a QGIS'
 alias sys='open -a System\ Preferences'
 alias filecount='ls | wc -l'
-
+alias kp='knife solo prepare'
+alias kc='knife solo cook'
+alias kn='knife cookbook create'
+alias vagrant new='vagrant destroy; vagrant up'
 # vagrant用のエイリアス
 alias vagrant new='vagrant halt; vagrant destroy; vagrant up'
-
+alias code='cd $HOME/code'
 ###############################################
 ## 環境変数の設定セクション
 ###############################################
@@ -436,6 +439,7 @@ esac
   alias gll="git logg"
   alias ga="git add ."
   alias gc="git config -l"
+  alias gco="git commit"
 
   # Squid(HTTP Proxy)
   alias squid="squid -N"
@@ -612,3 +616,4 @@ export GEM_HOME=/opt/local/lib/ruby/gems/2.0
 export RUBYLIB=/opt/local/lib/ruby/gems/2.0
 export PATH=$PATH:/var/lib/gems/2.0/bin
 export DOCKER_HOST=tcp://localhost:4243
+export PATH=$PATH:/usr/texbin
