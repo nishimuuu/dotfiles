@@ -8,6 +8,7 @@ g:quickrun_config	quickrun.jax	/*g:quickrun_config*
 g:quickrun_no_default_key_mappings	quickrun.jax	/*g:quickrun_no_default_key_mappings*
 quickrun	quickrun.jax	/*quickrun*
 quickrun#config()	quickrun.jax	/*quickrun#config()*
+quickrun#is_running()	quickrun.jax	/*quickrun#is_running()*
 quickrun#module#exists()	quickrun.jax	/*quickrun#module#exists()*
 quickrun#module#get()	quickrun.jax	/*quickrun#module#get()*
 quickrun#module#get_kinds()	quickrun.jax	/*quickrun#module#get_kinds()*
@@ -62,12 +63,14 @@ quickrun-module-outputter/buffer	quickrun.jax	/*quickrun-module-outputter\/buffe
 quickrun-module-outputter/buffered	quickrun.jax	/*quickrun-module-outputter\/buffered*
 quickrun-module-outputter/error	quickrun.jax	/*quickrun-module-outputter\/error*
 quickrun-module-outputter/file	quickrun.jax	/*quickrun-module-outputter\/file*
+quickrun-module-outputter/loclist	quickrun.jax	/*quickrun-module-outputter\/loclist*
 quickrun-module-outputter/message	quickrun.jax	/*quickrun-module-outputter\/message*
 quickrun-module-outputter/multi	quickrun.jax	/*quickrun-module-outputter\/multi*
 quickrun-module-outputter/null	quickrun.jax	/*quickrun-module-outputter\/null*
 quickrun-module-outputter/quickfix	quickrun.jax	/*quickrun-module-outputter\/quickfix*
 quickrun-module-outputter/variable	quickrun.jax	/*quickrun-module-outputter\/variable*
 quickrun-module-runner	quickrun.jax	/*quickrun-module-runner*
+quickrun-module-runner/concurrent_process	quickrun.jax	/*quickrun-module-runner\/concurrent_process*
 quickrun-module-runner/process_manager	quickrun.jax	/*quickrun-module-runner\/process_manager*
 quickrun-module-runner/python	quickrun.jax	/*quickrun-module-runner\/python*
 quickrun-module-runner/remote	quickrun.jax	/*quickrun-module-runner\/remote*
@@ -104,6 +107,7 @@ quickrun-register-module	quickrun.jax	/*quickrun-register-module*
 quickrun-runner-attributes	quickrun.jax	/*quickrun-runner-attributes*
 quickrun-runner.run()	quickrun.jax	/*quickrun-runner.run()*
 quickrun-session	quickrun.jax	/*quickrun-session*
+quickrun-session.config	quickrun.jax	/*quickrun-session.config*
 quickrun-session.continue()	quickrun.jax	/*quickrun-session.continue()*
 quickrun-session.exit_code	quickrun.jax	/*quickrun-session.exit_code*
 quickrun-session.finish()	quickrun.jax	/*quickrun-session.finish()*
