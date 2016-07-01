@@ -5,3 +5,4 @@
 2. git clone this repository
 3. mv dotfiles/.zshrc ./
 4. mv dotfiles/.vimrc ./
+5. ln -s dotfiles/.vim .vim
