@@ -1,3 +1,4 @@
+source ./dotfiles/zsh/color.zsh
 source ./dotfiles/zsh/alias.zsh
 source ./dotfiles/zsh/function.zsh
 source ./dotfiles/zsh/opt.zsh

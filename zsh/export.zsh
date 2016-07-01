@@ -72,3 +72,7 @@ if [ -f /Users/01010357/.pyenv/versions/2.7.11/bin/virtualenvwrapper.sh ]; then
   export WORKON_HOME=$HOME/.virtualenvs
   source /Users/01010357/.pyenv/versions/2.7.11/bin/virtualenvwrapper.sh
 fi
+
+
+
+ export ANDROID_HOME=/usr/local/opt/android-sdk

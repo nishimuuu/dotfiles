@@ -80,7 +80,7 @@ alias gll="git logg"
 alias ga="git add ."
 alias gc="git config -l"
 alias gco="git commit"
-
+alias gp="git push"
 # Squid(HTTP Proxy)
 alias squid="squid -N"
 
