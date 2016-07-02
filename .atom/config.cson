@@ -1,0 +1,37 @@
+"*":
+  "atom-material-ui":
+    colors:
+      abaseColor:
+        red: 59
+        green: 120
+        blue: 231
+        alpha: 1
+      accentColor:
+        red: 253
+        green: 186
+        blue: 62
+        alpha: 1
+      genAccent: true
+      predefinedColor: "Blue"
+    tabs:
+      compactTabs: true
+      tintedTabBar: true
+    treeView:
+      blendTabs: true
+      compactList: true
+    ui:
+      panelContrast: true
+      panelShadows: true
+  core:
+    themes: [
+      "atom-material-ui"
+      "one-dark-syntax"
+    ]
+  "exception-reporting":
+    userId: "7e34acf9-8bb6-fbca-933b-aa9ff2d3379a"
+  minimap:
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+  welcome:
+    showOnStartup: false
