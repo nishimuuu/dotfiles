@@ -134,4 +134,22 @@ apm install merge-conflicts
 apm install vim-mode-plus
 apm install file-icons
 apm install terminal-plus
+apm install ex-mode
 
+
+## npmの設定
+npm install -g eslint
+npm install -g webpack
+npm install -g gulp
+
+
+## gemの設定
+sudo gem install bundler --no-ri --no-rdoc
+
+
+## pipの設定
+pyenv install 2.7.11
+pyenv global 2.7.11
+pyenv rehash
+
+sudo pip install numpy scipy scikit-learn gensim pandas matplotlib jupyter notebook
