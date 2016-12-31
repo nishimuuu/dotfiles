@@ -43,31 +43,58 @@ brew cask install intellij-idea
 brew cask install alfred
 brew cask install atom
 
+
+# Install LINE
 mas install 539883307
+# Install WinArchiver
 mas install 414855915
+# Install BetterSnapTool
 mas install 417375580
+# Install Keynote
 mas install 409183694
+# Install ATOKPad
 mas install 460883588
+# Install Airmail
 mas install 918858936
+# Install Todoist
 mas install 585829637
+# Install Skitch
 mas install 425955336
+# Install The
 mas install 425424353
+# Install Caffeine
 mas install 411246225
+# Install OmniPlan
 mas install 1040002810
+# Install Kobito
 mas install 896624060
+# Install 1Password
 mas install 443987910
+# Install Tweetbot
 mas install 557168941
+# Install Numbers
 mas install 409203825
+# Install Transmit
 mas install 403388562
+# Install Pages
 mas install 409201541
+# Install OmniFocus
 mas install 867299399
+# Install Marked
 mas install 448925439
+# Install Microsoft
 mas install 715768417
+# Install Sunrise
 mas install 886106985
+# Install Slack
 mas install 803453959
+# Install MenuBar
 mas install 714196447
+# Install Dash
 mas install 449589707
+# Install MindNode
 mas install 402398561
+
 
 # Desktopにファイルを表示しない
 defaults write com.apple.finder CreateDesktop -bool false
@@ -135,6 +162,7 @@ apm install vim-mode-plus
 apm install file-icons
 apm install terminal-plus
 apm install ex-mode
+apm install plantuml-viewer
 
 
 ## npmの設定

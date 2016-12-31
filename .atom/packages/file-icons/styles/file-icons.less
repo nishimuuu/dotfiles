@@ -56,6 +56,12 @@
 
   // Bower Components
   &[data-name="bower_components"]:before { .bower-icon; .auto(bower); }
+
+  // SVN
+  &[data-name=".svn"]:before { .svn-icon; }
+
+  // Vagrant
+  &[data-name=".vagrant"]:before { .vagrant-icon; }
 }
 
 
@@ -72,6 +78,10 @@
     .default-icon;
     font-style: normal !important;
   }
+
+  // 1C Enterprise language
+  &[data-name$=".bsl"]:before            { .1c-icon;               .dark-blue; }
+  &[data-name$=".os"]:before             { .1c-icon;              .medium-red; }
 
   // ABAP
   &[data-name$=".abap"]:before           { .abap-icon;         .medium-orange; }
@@ -168,6 +178,7 @@
   &[data-name$=".nasm"]:before,
   &[data-name$=".asm"]:before            { .binary-icon;          .medium-red; }
   &[data-name$=".ko"]:before             { .binary-icon;          .dark-green; }
+  &[data-name$=".agc"]:before            { .binary-icon;           .dark-blue; }
   &[data-name$=".objdump"]:before,
   &[data-name$=".c-objdump"]:before,
   &[data-name$=".cppobjdump"]:before,
@@ -406,6 +417,7 @@
   &[data-name$=".ttl"]:before            { .database-icon;       .medium-cyan; }
   &[data-name$=".rviz"]:before           { .database-icon;         .dark-blue; }
   &[data-name$=".syntax"]:before         { .database-icon;       .medium-blue; }
+  &[data-name$=".fea"]:before            { .database-icon;        .light-blue; }
 
   // dBASE
   &[data-name$=".dbf"]:before            { .dbase-icon;           .medium-red; }
@@ -423,15 +435,21 @@
   &[data-name$=".arpa"]:before           { .earth-icon;         .medium-green; }
   &[data-name="CNAME"]:before            { .earth-icon;            .dark-blue; }
 
-  // Dockerfile
+  // Docker
   &[data-name^="Dockerfile"]:before      { .docker-icon;           .dark-blue; }
+  &[data-name$=".dockerfile"]:before     { .docker-icon;           .dark-blue; }
   &[data-name$=".dockerignore"]:before   { .docker-icon;           .dark-blue; }
+  &[data-name^="docker-compose"]:before  { .docker-icon;           .dark-blue; }
+  &[data-name="docker-sync.yml"]:before  { .docker-icon;           .dark-blue; }
 
   // Dogescript
   &[data-name$=".djs"]:before            { .doge-icon;         .medium-yellow; }
 
   // Doxyfile
   &[data-name="Doxyfile"]:before         { .doxygen-icon;        .medium-blue; }
+
+  // DyLib
+  &[data-name$=".dylib"]:before          { .dylib-icon;          .medium-cyan; }
 
   // E
   &[data-name$=".E"]:before              { .e-icon;             .medium-green; }
@@ -446,6 +464,9 @@
 
   // Ecere project
   &[data-name$=".epj"]:before            { .ecere-icon;          .medium-blue; }
+
+  // EditorConfig
+  &[data-name$=".editorconfig"]:before   { .editorconfig-icon; .medium-orange; }
 
   // Eiffel
   &[data-name$=".e"]:before              { .eiffel-icon;         .medium-cyan; }
@@ -463,10 +484,17 @@
   &[data-name$=".elm"]:before            { .elm-icon;            .medium-blue; }
 
   // Emacs Lisp
+  &[data-name="_emacs"]:before,
+  &[data-name="abbrev_defs"]:before,
   &[data-name$=".emacs"]:before,
   &[data-name$=".spacemacs"]:before,
   &[data-name$=".emacs.desktop"]:before,
   &[data-name$=".el"]:before             { .emacs-icon;        .medium-purple; }
+  &[data-name$=".eld"]:before,
+  &[data-name$=".elc"]:before            { .emacs-icon;          .dark-purple; }
+  &[data-name$=".gnus"]:before           { .emacs-icon;           .medium-red; }
+  &[data-name$=".viper"]:before          { .emacs-icon;           .dark-green; }
+  &[data-name="Project.ede"]:before      { .emacs-icon;          .medium-blue; }
 
   // EmberScript
   &[data-name$=".emberscript"]:before    { .em-icon;              .medium-red; }
@@ -474,6 +502,9 @@
   // Emblem
   &[data-name$=".emblem"]:before,
   &[data-name$=".em"]:before             { .mustache-icon;       .medium-blue; }
+
+  // EQ
+  &[data-name$=".eq"]:before             { .eq-icon;           .medium-orange; }
 
   // Erlang
   &[data-name$=".erl"]:before            { .erlang-icon;          .medium-red; }
@@ -490,6 +521,7 @@
   &[data-name$=".eslintrc.yaml"]:before,
   &[data-name$=".eslintrc.yml"]:before   { .eslint-icon;         .light-purple }
   &[data-name$=".eslintignore"]:before   { .eslint-icon;        .medium-purple }
+  &[data-name$=".eslintcache"]:before    { .eslint-icon;        .medium-purple }
 
   // Factor
   &[data-name$=".factor"]:before         { .factor-icon;       .medium-orange; }
@@ -516,11 +548,16 @@
   &[data-name$=".fsi"]:before            { .fsharp-icon;         .medium-blue; }
 
   // Flow
+  &[data-name$=".js.flow"]:before,
   &[data-name$=".flowconfig"]:before     { .flow-icon;         .medium-orange; }
 
   // FLUX
   &[data-name$=".fx"]:before             { .flux-icon;           .medium-blue; }
   &[data-name$=".flux"]:before           { .flux-icon;             .dark-blue; }
+
+  // FontForge
+  &[data-name$=".pe"]:before             { .ff-icon;           .medium-orange; }
+  &[data-name$=".sfd"]:before            { .ff-icon;               .dark-blue; }
 
   // FORTRAN
   &[data-name$=".f"]:before,
@@ -554,13 +591,16 @@
   &[data-name$=".gi"]:before             { .gap-icon;              .dark-blue; }
   &[data-name$=".tst"]:before            { .gap-icon;          .medium-orange; }
 
+  // GDB
+  &[data-name$=".gdb"]:before            { .gdb-icon;            .auto(green); }
+  &[data-name$=".gdbinit"]:before        { .gdb-icon;             .auto(cyan); }
+
   // GDScript / Godot
   &[data-name$=".gd"]:before             { .godot-icon;          .medium-blue; }
 
   // Gear
   &[data-name$=".hgignore"]:before       { .gear-icon;                         }
   &[data-name$=".arcconfig"]:before      { .gear-icon;             .dark-blue; }
-  &[data-name$=".editorconfig"]:before   { .gear-icon;         .medium-orange; }
   &[data-name=".lesshintrc"]:before      { .gear-icon;           .dark-yellow; }
   &[data-name=".csscomb.json"]:before    { .gear-icon;         .medium-yellow; }
   &[data-name$=".csslintrc"]:before      { .gear-icon;         .medium-yellow; }
@@ -578,6 +618,7 @@
   &[data-name=".pairs"]:before           { .gear-icon;            .dark-green; }
   &[data-name$=".ctags"]:before          { .gear-icon;           .dark-purple; }
   &[data-name$=".htmlhintrc"]:before     { .gear-icon;         .medium-orange; }
+  &[data-name$=".lintstagedrc"]:before   { .gear-icon;           .dark-orange; }
 
   // Generic format: Audio
   &[data-name$=".mp3"]:before            { .audio-icon;           .medium-red; }
@@ -602,13 +643,17 @@
   &[data-name="configure.ac"]:before     { .code-icon;            .medium-red; }
   &[data-name="Settings.StyleCop"]:before{ .code-icon;          .medium-green; }
   &[data-name$=".4th"]:before            { .code-icon;           .medium-blue; }
+  &[data-name$=".abnf"]:before           { .code-icon;          .medium-green; }
   &[data-name$=".aepx"]:before           { .code-icon;         .medium-purple; }
   &[data-name$=".agda"]:before           { .code-icon;             .dark-cyan; }
   &[data-name$=".appxmanifest"]:before   { .code-icon;         .medium-orange; }
   &[data-name$=".ash"]:before            { .code-icon;           .medium-cyan; }
+  &[data-name$=".asn"]:before            { .code-icon;           .medium-cyan; }
+  &[data-name$=".asn1"]:before           { .code-icon;           .medium-cyan; }
   &[data-name$=".axml"]:before           { .code-icon;             .dark-blue; }
   &[data-name$=".befunge"]:before        { .code-icon;         .medium-orange; }
   &[data-name$=".bmx"]:before            { .code-icon;             .dark-blue; }
+  &[data-name$=".bnf"]:before            { .code-icon;         .medium-maroon; }
   &[data-name$=".brs"]:before            { .code-icon;             .dark-blue; }
   &[data-name$=".capnp"]:before          { .code-icon;              .dark-red; }
   &[data-name$=".cbl"]:before            { .code-icon;         .medium-maroon; }
@@ -629,6 +674,7 @@
   &[data-name$=".dotsettings"]:before    { .code-icon;              .dark-red; }
   &[data-name$=".dyl"]:before            { .code-icon;           .medium-blue; }
   &[data-name$=".dylan"]:before          { .code-icon;           .medium-blue; }
+  &[data-name$=".ebnf"]:before           { .code-icon;            .medium-red; }
   &[data-name$=".ecl"]:before            { .code-icon;           .medium-blue; }
   &[data-name$=".eclxml"]:before         { .code-icon;            .dark-green; }
   &[data-name$=".filters"]:before        { .code-icon;           .medium-pink; }
@@ -640,7 +686,6 @@
   &[data-name$=".fth"]:before            { .code-icon;             .dark-blue; }
   &[data-name$=".fun"]:before            { .code-icon;         .medium-orange; }
   &[data-name$=".fxml"]:before           { .code-icon;         .medium-maroon; }
-  &[data-name$=".gdbinit"]:before        { .code-icon;            .medium-red; }
   &[data-name$=".grace"]:before          { .code-icon;         .medium-purple; }
   &[data-name$=".grxml"]:before          { .code-icon;           .dark-orange; }
   &[data-name$=".iml"]:before            { .code-icon;            .medium-red; }
@@ -834,6 +879,7 @@
   &[data-name$=".gitignore"]:before,
   &[data-name$=".gitkeep"]:before,
   &[data-name$=".gitmodules"]:before,
+  &[data-name$=".keep"]:before,
   &[data-name=".mailmap"]:before         { .git-icon;             .medium-red; }
 
   // Git: Commit
@@ -849,6 +895,9 @@
 
   // Glyph
   &[data-name$=".glf"]:before            { .pointwise-icon;      .medium-blue; }
+
+  // Glyphs
+  &[data-name$=".glyphs"]:before         { .glyphs-icon;        .medium-green; }
 
   // Gnuplot
   &[data-name$=".gp"]:before,
@@ -985,6 +1034,7 @@
   &[data-name$="._js"]:before            { .js-icon;            .auto(orange); }
   &[data-name$=".jsb"]:before            { .js-icon;            .auto(maroon); }
   &[data-name$=".jsm"]:before            { .js-icon;              .auto(blue); }
+  &[data-name$=".mjs"]:before            { .js-icon;              .auto(blue); }
   &[data-name$=".jss"]:before            { .js-icon;             .auto(green); }
   &[data-name$=".es6"]:before            { .js-icon;            .auto(yellow); }
   &[data-name$=".es"]:before             { .js-icon;            .auto(yellow); }
@@ -1000,6 +1050,7 @@
 
   // Jinja
   &[data-name$=".jinja"]:before          { .jinja-icon;             .dark-red; }
+  &[data-name$=".jinja2"]:before         { .jinja-icon;           .medium-red; }
 
   // JSONiq
   &[data-name$=".jq"]:before             { .sql-icon;            .medium-blue; }
@@ -1090,7 +1141,6 @@
 
   // Logos
   &[data-name$=".xm"]:before             { .mobile-icon;           .dark-blue; }
-  &[data-name$=".x"]:before              { .mobile-icon;          .dark-green; }
   &[data-name$=".xi"]:before             { .mobile-icon;            .dark-red; }
 
   // Logtalk
@@ -1210,7 +1260,8 @@
   &[data-name$=".rnh"]:before,
   &[data-name$=".rno"]:before,
   &[data-name$=".roff"]:before,
-  &[data-name$=".run"]:before      { .manpage-icon;        .dark-maroon; }
+  &[data-name$=".run"]:before      { .manpage-icon;              .dark-maroon; }
+  &[data-name$=".pic"]:before      { .manpage-icon;             .medium-green; }
 
   // MediaWiki
   &[data-name$=".mediawiki"]:before      { .mediawiki-icon;    .medium-yellow; }
@@ -1270,6 +1321,9 @@
   &[data-name$=".mir"]:before,
   &[data-name$=".mirah"]:before          { .mirah-icon;           .light-blue; }
 
+  // Mocha
+  &[data-name="mocha.opts"]:before       { .mocha-icon;         .light-maroon; }
+
   // Modelica
   &[data-name$=".mo"]:before             { .circle-icon;           .light-red; }
 
@@ -1286,6 +1340,9 @@
   // MoonScript
   &[data-name$=".moon"]:before           { .moon-icon;         .medium-yellow; }
 
+  // Mruby
+  &[data-name$=".mrb"]:before            { .mruby-icon;           .medium-red; }
+
   // MuPAD
   &[data-name$=".mu"]:before             { .mupad-icon;           .medium-red; }
 
@@ -1299,6 +1356,10 @@
 
   // NCAR Command Language (NCL)
   &[data-name$=".ncl"]:before            { .earth-icon;         .medium-green; }
+
+  // Neko
+  &[data-name$=".neko"]:before           { .neko-icon;         .medium-orange; }
+  &[data-name="run.n"]:before            { .neko-icon;           .dark-orange; }
 
   // NetLinx (AMX logo)
   &[data-name$=".axs"]:before            { .amx-icon;            .medium-blue; }
@@ -1328,6 +1389,7 @@
   &[data-name$=".nse"]:before            { .nmap-icon;             .dark-blue; }
 
   // NodeJS
+  &[data-name=".nvmrc"]:before,
   &[data-name=".node-version"]:before    { .node-icon;          .medium-green; }
 
   // Nodemon
@@ -1335,13 +1397,15 @@
   &[data-name=".nodemonignore"]:before   { .gear-icon;          .medium-green; }
 
   // NPM (Node.js)
-  &[data-name="npmrc"]:before,           &[data-name=".npmrc"]:before,
-  &[data-name=".npmignore"]:before       { .npm-icon;             .medium-red; }
-  &[data-name="npm-debug.log"]:before    { .npm-icon;             .medium-red; }
+  &[data-name="npmrc"]:before,
+  &[data-name=".npmrc"]:before,
+  &[data-name=".npmignore"]:before,
+  &[data-name="npm-debug.log"]:before,
+  &[data-name="npm-shrinkwrap.json"]:before,
   &[data-name="package.json"]:before     { .npm-icon;             .medium-red; }
 
   // NSIS
-  &[data-name$=".nsi"]:before            { .nsis-icon;           .medium-cyan; }
+  &[data-name$=".nsi"]:before            { .nsis-icon;         .medium-purple; }
   &[data-name$=".nsh"]:before            { .nsis-icon;             .dark-cyan; }
 
   // Nu
@@ -1383,6 +1447,7 @@
   &[data-name$=".inl"]:before            { .cpp-icon;              .auto(red); }
   &[data-name$=".m"]:before              { .objc-icon;           .medium-blue; }
   &[data-name$=".mm"]:before             { .objc-icon;           .medium-blue; }
+  &[data-name$=".x"]:before              { .objc-icon;            .dark-green; }
   &[data-name$=".swift"]:before          { .swift-icon;         .medium-green; }
   &[data-name$=".cs"]:before             { .csharp-icon;          .auto(blue); }
   &[data-name$=".csx"]:before            { .csscript-icon;        .dark-green; }
@@ -1500,7 +1565,7 @@
   &[data-name$=".php5"]:before,
   &[data-name$=".phps"]:before,
   &[data-name$=".phpt"]:before           { .php-icon;              .dark-blue; }
-  &[data-name$=".blade.php"]:before      { .laravel-icon;        .dark-purple; }
+  &[data-name$=".blade.php"]:before      { .laravel-icon;      .medium-orange; }
   &[data-name^="Phakefile"]:before       { .php-icon;             .dark-green; }
 
   // Pickled Python object
@@ -1534,13 +1599,25 @@
   &[data-name$=".postcss"]:before,
   &[data-name$=".pcss"]:before           { .postcss-icon;           .dark-red; }
   &[data-name$=".sss"]:before            { .postcss-icon;          .dark-pink; }
+  &[data-name$=".postcssrc"]:before      { .postcss-icon;       .auto(orange); }
 
   // PostScript
   &[data-name$=".ps"]:before             { .postscript-icon;      .medium-red; }
   &[data-name$=".eps"]:before            { .postscript-icon;   .medium-orange; }
+  &[data-name$=".pfb"]:before            { .postscript-icon;     .dark-maroon; }
+  &[data-name$=".afm"]:before            { .postscript-icon;    .medium-green; }
 
   // POV-Ray SDL
   &[data-name$=".pov"]:before            { .povray-icon;           .dark-blue; }
+
+  // PowerBuilder
+  &[data-name$=".pbl"]:before            { .powerbuilder-icon;   .medium-blue; }
+  &[data-name$=".pbt"]:before            { .powerbuilder-icon;     .dark-blue; }
+  &[data-name$=".srw"]:before            { .powerbuilder-icon;    .medium-red; }
+  &[data-name$=".sru"]:before            { .powerbuilder-icon; .medium-orange; }
+  &[data-name$=".srp"]:before            { .powerbuilder-icon; .medium-maroon; }
+  &[data-name$=".sra"]:before            { .powerbuilder-icon;   .medium-blue; }
+  &[data-name$=".srj"]:before            { .powerbuilder-icon; .medium-purple; }
 
   // PowerShell
   &[data-name$=".ps1"]:before            { .powershell-icon;     .medium-blue; }
@@ -1550,6 +1627,7 @@
 
   // Pug/Jade
   &[data-name$=".pug"]:before            { .pug-icon;             .medium-red; }
+  &[data-name^=".pug-lintrc"]:before     { .pug-icon;          .medium-orange; }
   &[data-name$=".jade"]:before           { .jade-icon;            .medium-red; }
 
   // Puppet
@@ -1632,6 +1710,10 @@
   &[data-name="Contributors"]:before,    &[data-name$=".1ST"]:before,
   &[data-name$=".1st"]:before            { .book-icon;           .medium-blue; }
 
+  // Reason
+  &[data-name$=".re"]:before             { .reason-icon;          .medium-red; }
+  &[data-name$=".rei"]:before            { .reason-icon;       .medium-orange; }
+
   // Rebol
   &[data-name$=".rebol"]:before,
   &[data-name$=".reb"]:before            { .rebol-icon;           .dark-green; }
@@ -1644,6 +1726,10 @@
 
   // Red Hat
   &[data-name$=".spec"]:before           { .red-hat-icon;           .dark-red; }
+
+  // Regular expressions
+  &[data-name$=".regex"]:before,
+  &[data-name$=".regexp"]:before         { .regex-icon;         .medium-green; }
 
   // Ren'Py (Python)
   &[data-name$=".rpy"]:before            { .python-icon;         .medium-pink; }
@@ -1658,6 +1744,11 @@
   &[data-name$=".rest"]:before           { .rst-icon;              .dark-blue; }
   &[data-name$=".rest.txt"]:before       { .rst-icon;              .dark-blue; }
   &[data-name$=".rst.txt"]:before        { .rst-icon;              .dark-blue; }
+
+  // REXX
+  &[data-name$=".rex"]:before,
+  &[data-name$=".rexx"]:before           { .rexx-icon;            .medium-red; }
+  &[data-name$=".pprx"]:before           { .rexx-icon;           .medium-blue; }
 
   // Riot.js
   &[data-name$=".tag"]:before            { .riot-icon;            .medium-red; }
@@ -1727,7 +1818,6 @@
   &[data-name$=".scm"]:before            { .scheme-icon;          .medium-red; }
   &[data-name$=".sld"]:before            { .scheme-icon;         .medium-blue; }
   &[data-name$=".sps"]:before            { .scheme-icon;       .medium-purple; }
-  &[data-name$=".ss"]:before             { .scheme-icon;         .medium-pink; }
 
   // Scilab
   &[data-name$=".sci"]:before            { .scilab-icon;         .dark-purple; }
@@ -1751,6 +1841,7 @@
   &[data-name$=".sfproj"]:before         { .sf-icon;            .light-orange; }
 
   // Shell
+  &[data-name$=".inputrc"]:before       { .terminal-icon; }
   &[data-name$=".sh"]:before,
   &[data-name$=".bats"]:before,
   &[data-name$=".bash"]:before,
@@ -1765,8 +1856,10 @@
   &[data-name="bash_history"]:before,    &[data-name=".bash_history"]:before,
   &[data-name$=".ksh"]:before            { .terminal-icon;       .dark-yellow; }
   &[data-name$=".sh-session"]:before     { .terminal-icon;      .auto(yellow); }
+  &[data-name="antigen"]:before,         &[data-name=".antigen"]:before,
   &[data-name="zlogin"]:before,          &[data-name=".zlogin"]:before,
   &[data-name="zlogout"]:before,         &[data-name=".zlogout"]:before,
+  &[data-name="zpreztorc"]:before,       &[data-name=".zpreztorc"]:before,
   &[data-name="zprofile"]:before,        &[data-name=".zprofile"]:before,
   &[data-name="zshenv"]:before,          &[data-name=".zshenv"]:before,
   &[data-name="zshrc"]:before,           &[data-name=".zshrc"]:before,
@@ -1794,6 +1887,12 @@
   // Shopify
   &[data-name$=".liquid"]:before         { .shopify-icon;       .medium-green; }
 
+  // Sigils
+  &[data-name$=".sigils"]:before         { .sigils-icon;            .dark-red; }
+
+  // SilverStripe
+  &[data-name$=".ss"]:before             { .silverstripe-icon;   .medium-blue; }
+
   // Sketch
   &[data-name$=".sketch"]:before         { .sketch-icon;       .medium-orange; }
 
@@ -1805,6 +1904,9 @@
 
   // Smali
   &[data-name$=".smali"]:before          { .android-icon;       .medium-green; }
+
+  // Snyk
+  &[data-name$=".snyk"]:before           { .snyk-icon;           .dark-purple; }
 
   // SourcePawn / PAWN
   &[data-name$=".sma"]:before,
@@ -1847,7 +1949,7 @@
   // SAS
   &[data-name$=".sas"]:before            { .sas-icon;            .medium-blue; }
 
-  // SQL
+  // SQL & variants such as PLSQL, T-SQL, etc.
   &[data-name$=".sql"]:before,
   &[data-name$=".SQL"]:before,
   &[data-name$=".ddl"]:before,
@@ -1855,6 +1957,7 @@
   &[data-name$=".viw"]:before,
   &[data-name$=".db2"]:before,
   &[data-name$=".prc"]:before            { .sql-icon; }
+  &[data-name$=".dsql"]:before           { .tsql-icon;             .medium-purple; }
   &[data-name$=".pls"]:before,           // PLSQL
   &[data-name$=".pck"]:before,
   &[data-name$=".pks"]:before,
@@ -1927,8 +2030,12 @@
   &[data-name$=".tt2"]:before            { .tt-icon;             .medium-blue; }
   &[data-name$=".tt3"]:before            { .tt-icon;           .medium-purple; }
 
+  // Tern
+  &[data-name$=".tern-project"]:before   { .tern-icon;           .medium-blue; }
+
   // Terraform
   &[data-name$=".tf"]:before             { .terraform-icon;      .dark-purple; }
+  &[data-name$=".tfvars"]:before         { .terraform-icon;      .dark-purple; }
 
   // TeX
   &[data-name$=".tex"]:before            { .tex-icon;             .auto(blue); }
@@ -1943,6 +2050,7 @@
   &[data-name$=".cbx"]:before            { .bibtex-icon;           .auto(red); }
   &[data-name$=".bbx"]:before            { .bibtex-icon;        .auto(orange); }
   &[data-name$=".bib"]:before            { .bibtex-icon;        .auto(yellow); }
+  &[data-name$=".bst"]:before            { .bibtex-icon;         .auto(green); }
   &[data-name$=".mkiv"]:before           { .tex-icon;           .auto(orange); }
   &[data-name$=".mkvi"]:before           { .tex-icon;           .auto(orange); }
   &[data-name$=".mkii"]:before           { .tex-icon;           .auto(orange); }
@@ -1955,6 +2063,7 @@
   &[data-name$=".textile"]:before        { .textile-icon;      .medium-orange; }
 
   // TextMate
+  &[data-name$=".tmcg"]:before           { .textmate-icon;        .dark-green; }
   &[data-name$=".tmLanguage"]:before     { .textmate-icon;       .dark-purple; }
   &[data-name$=".tmCommand"]:before      { .textmate-icon;       .medium-blue; }
   &[data-name$=".tmPreferences"]:before  { .textmate-icon;         .dark-blue; }
@@ -2158,6 +2267,7 @@
   // Bower
   &[data-name=".bowerrc"]:before         { .bower-icon;                        }
   &[data-name="bower.json"]:before       { .bower-icon;          .auto(bower); }
+  &[data-name="Bowerfile"]:before       { .bower-icon;           .auto(bower); }
 
   // Brakeman
   &[data-name$="brakeman.yml"]:before    { .brakeman-icon;        .medium-red; }
@@ -2171,11 +2281,17 @@
   &[data-name$="Cargo.toml"]:before      { .package-icon;       .light-orange; }
   &[data-name$="Cargo.lock"]:before      { .package-icon;        .dark-orange; }
 
+  // CircleCI
+  &[data-name="circle.yml"]:before       { .circleci-icon;      .medium-green; }
+
   // CMake
   &[data-name="CMakeLists.txt"]:before   { .cmake-icon;           .medium-red; }
 
   // Code Climate
   &[data-name=".codeclimate.yml"]:before { .cc-icon;            .medium-green; }
+
+  // Codecov
+  &[data-name="codecov.yml"]:before      { .codecov-icon;          .dark-pink; }
 
   // Composer
   &[data-name="composer.json"]:before,
@@ -2232,11 +2348,17 @@
   &[data-name$="Gulpfile.babel.js"]:before,
   &[data-name$="gulpfile.babel.js"]:before { .gulp-icon;          .medium-red; }
 
+  // Makefile.boot
+  &[data-name="Makefile.boot"]:before      { .boot-icon;         .auto(green); }
+
   // Manual Pages
   &[data-name^="tmac."]:before             { .manpage-icon;       .dark-green; }
 
   // New Relic
   &[data-name^="newrelic.yml"]:before      { .newrelic-icon;     .medium-cyan; }
+
+  // PostCSS
+  &[data-name$="postcss.config.js"]:before { .postcss-icon;     .auto(yellow); }
 
   // Protractor
   &[data-name^="protractor.conf."]:before  { .protractor-icon;    .medium-red; }
@@ -2245,7 +2367,7 @@
   &[data-name="riemann.config"]:before     { .clojure-icon;     .auto(maroon); }
 
   // Rollup
-  &[data-name^="rollup.config."]:before    { .rollup-icon;         .auto(red); }
+  &[data-name^="rollup.config."]:before    { .rollup-icon;        .medium-red; }
 
   // Scrutinizer
   &[data-name$=".scrutinizer.yml"]:before  { .scrutinizer-icon;    .dark-blue; }
@@ -2259,8 +2381,23 @@
   // Swap files
   &[data-name$=".swp"]:before              { .binary-icon;        .dark-green; }
 
+  // TI-BASIC / TI PRGM
+  &[data-name$=".8xp"]:before,
+  &[data-name$=".8xp.txt"]:before          { .calc-icon;       .medium-maroon; }
+  &[data-name$=".8xk"]:before,
+  &[data-name$=".8xk.txt"]:before          { .calc-icon;            .dark-red; }
+
   // Typings
   &[data-name="typings.json"]:before       { .typings-icon;    .medium-maroon; }
+
+  // Wercker
+  &[data-name="wercker.yml"]:before        { .wercker-icon;    .medium-purple; }
+
+  // Yarn
+  &[data-name="yarn.lock"]:before          { .yarn-icon;         .medium-blue; }
+
+  // Yeoman
+  &[data-name$=".yo-rc.json"]:before       { .yeoman-icon;       .medium-cyan; }
 }
 
 
@@ -2296,6 +2433,10 @@ body.file-icons-on-changes {
       color: inherit !important;
     }
   }
+
+  .tab-bar .title:not(.status-modified):not(.status-added):before{
+    color: inherit !important;
+  }
 }
 
 
@@ -2313,5 +2454,41 @@ body.file-icons-on-changes {
   &[data-name$=".vala"]:before,
   &[data-name$=".vapi"]:before{
     line-height: 1.5;
+  }
+}
+
+
+// Temporary fixes for Atom Material UI
+.theme-atom-material-ui{
+
+  .entry[is="tree-view-file"] > .icon-file-text{
+
+    // #gh-400: Laravel icon
+    &[data-name$=".blade.php"]:before{
+      .laravel-icon;
+      .medium-orange;
+
+      font-size: 16px !important;
+      transform: scale(1.35) !important;
+      top: 2px;
+      left: -1px;
+    }
+
+    // JavaScript
+    &[data-name$=".js"]:before{
+      font-size: 19px !important;
+    }
+  }
+
+  .file-icons-tab-pane-icon & @{pane-tab-selector}[data-name$=".blade.php"]:before{
+    .laravel-icon;
+    .medium-orange;
+    top: -3px !important;
+    position: relative;
+    display: inline-block;
+
+    font-size: 16px !important;
+    transform: scale(1.35) !important;
+    left: -1px;
   }
 }

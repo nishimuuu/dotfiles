@@ -64,6 +64,8 @@ export RUBYLIB=/opt/local/lib/ruby/gems/2.0
 export PATH=$PATH:/var/lib/gems/2.0/bin
 export DOCKER_HOST=tcp://localhost:4243
 export PATH=$PATH:/usr/texbin
+export PATH=$PATH:/Library/TeX/texbin
+export PATH=$PATH:/opt/myscript
 
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
@@ -74,5 +76,10 @@ if [ -f /Users/01010357/.pyenv/versions/2.7.11/bin/virtualenvwrapper.sh ]; then
 fi
 
 
-
+#if [ -f /Users/01010357/.pyenv/versions/3.5.1/bin/virtualenvwrapper.sh ]; then
+#  export WORKON_HOME=$HOME/.virtualenvs
+#  source /Users/01010357/.pyenv/versions/3.5.1/bin/virtualenvwrapper.sh
+#fi
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
  export ANDROID_HOME=/usr/local/opt/android-sdk

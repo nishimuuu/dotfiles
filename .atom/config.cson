@@ -1,16 +1,31 @@
 "*":
+  Hydrogen:
+    kernelMappings: '''
+      {
+        "kernelspecs": {
+          "python2": {
+            "resource_dir": "/Users/01010357/.virtualenvs/main/lib/python2.7/site-packages/ipykernel/resources",
+            "spec": {
+              "language": "python",
+              "display_name": "Python 2",
+              "env": {},
+              "argv": [
+                "/Users/01010357/.virtualenvs/main/bin/python2.7",
+                "-m",
+                "ipykernel",
+                "-f",
+                "{connection_file}"
+              ]
+            }
+          }
+        }
+      }
+    '''
+    kernelspec: "{\"kernelspecs\":{\"python2\":{\"resource_dir\":\"/Users/01010357/.pyenv/versions/2.7.11/lib/python2.7/site-packages/ipykernel/resources\",\"spec\":{\"language\":\"python\",\"display_name\":\"Python 2\",\"env\":{},\"argv\":[\"/Users/01010357/.pyenv/versions/2.7.11/bin/python2.7\",\"-m\",\"ipykernel\",\"-f\",\"{connection_file}\"]}}}}"
   "atom-material-ui":
     colors:
-      abaseColor:
-        red: 59
-        green: 120
-        blue: 231
-        alpha: 1
-      accentColor:
-        red: 253
-        green: 186
-        blue: 62
-        alpha: 1
+      abaseColor: "#3b78e7"
+      accentColor: "#fdba3e"
       genAccent: true
       predefinedColor: "Blue"
     tabs:
@@ -22,16 +37,41 @@
     ui:
       panelContrast: true
       panelShadows: true
+  "autocomplete-python":
+    useKite: false
   core:
+    packagesWithKeymapsDisabled: [
+      "ex-mode"
+    ]
+    telemetryConsent: "no"
     themes: [
       "atom-material-ui"
       "one-dark-syntax"
     ]
+  editor:
+    showIndentGuide: true
+    softWrap: true
+    tabType: "soft"
+  "ex-mode":
+    splitbelow: true
+    splitright: true
   "exception-reporting":
     userId: "7e34acf9-8bb6-fbca-933b-aa9ff2d3379a"
+  "markdown-preview":
+    liveUpdate: false
+    useGitHubStyle: true
   minimap:
     plugins:
       "git-diff": true
       "git-diffDecorationsZIndex": 0
+  "vim-mode": {}
+  "vim-mode-plus":
+    highlightSearch: true
+    ignoreCaseForSearch: true
+    incrementalSearch: true
+    useClipboardAsDefaultRegister: true
   welcome:
     showOnStartup: false
+".ini.source":
+  editor:
+    nonWordCharacters: "/\\()\"',.;<>~!@#$%^&*|+=[]{}`?-…"

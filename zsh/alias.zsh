@@ -1,7 +1,12 @@
 
+alias dstart='docker-machine start dev; eval $(docker-machine env dev)'
+alias dinit='docker-machine create --driver virtualbox'
+
+
 ##############################################################
 ##エイリアスの大量登録ゾーン########
 ##たぶんMacじゃないとうごかないよ##
+alias fuck="networksetup -setairportpower en0 off; sleep 2; networksetup -setairportpower en0 on"
 
 alias md='open -a Kobito'
 alias java='java -Dfile.encoding=UTF-8'
@@ -24,6 +29,7 @@ alias cal='open -a Calendar'
 alias yoru='open -a YoruFukurou'
 alias gem install= 'ARCHFLAG=-Wno-error=unused-command-line-argument-hard-error-in-future gem install'
 alias l='ls -lha'
+alias tf='terraform'
 
 #javaのコンパイル時に　utf-8でコンパイル・実行
 alias java='java -Dfile.encoding=UTF-8'
