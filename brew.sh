@@ -171,13 +171,18 @@ npm install -g webpack
 npm install -g gulp
 
 
-## gemの設定
-sudo gem install bundler --no-ri --no-rdoc
 
 
-## pipの設定
+## pyenvの設定
 pyenv install 2.7.11
+pyenv install 3.6.0
 pyenv global 2.7.11
 pyenv rehash
+sudo pip install numpy scipy scikit-learn gensim pandas matplotlib jupyter notebook jupyterlab
 
-sudo pip install numpy scipy scikit-learn gensim pandas matplotlib jupyter notebook
+## rbenvの設定
+rbenv install 2.4.0
+rbenv global 2.4.0
+rbenv rehash
+sudo gem install bundler --no-ri --no-rdoc
+
