@@ -1,3 +1,8 @@
+mkdir $HOME/project $HOME/git $HOME/ss
+sudo mkdir /opt/myscript/
+
+
+
 cp .vim.zip /tmp/.vim.zip
 cd ../
 cp ./dotfiles/.zshrc ./

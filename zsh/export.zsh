@@ -83,3 +83,6 @@ fi
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
  export ANDROID_HOME=/usr/local/opt/android-sdk
+
+
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
