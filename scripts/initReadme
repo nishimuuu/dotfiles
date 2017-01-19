@@ -1,0 +1,4 @@
+#!/bin/bash
+
+CURRENT=$(cd $(dirname $0) && pwd)
+cp $CURRENT/README.md ./

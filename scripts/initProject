@@ -1,0 +1,28 @@
+#!/bin/bash
+
+mkdir script
+mkdir docs
+mkdir src
+
+touch README.md
+
+touch .gitignore
+touch .dockerignore
+
+echo 'vendor/bundle' >> .gitignore
+echo 'node_modules' >> .gitignore
+echo '.idea' >> .gitignore
+echo '.DS_Store' >> .gitignore
+
+touch script/bootstrap
+touch script/ci-build
+touch script/ci-deploy
+touch script/server
+touch script/console
+touch script/test
+touch script/build
+touch script/migrate
+
+echo 'Created!'
+tree
+

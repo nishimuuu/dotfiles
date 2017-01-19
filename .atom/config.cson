@@ -35,11 +35,14 @@
       blendTabs: true
       compactList: true
     ui:
-      panelContrast: true
-      panelShadows: true
+      panelContrast: false
+      panelShadows: false
   "autocomplete-python":
     useKite: false
   core:
+    allowPendingPaneItems: false
+    audioBeep: false
+    openEmptyEditorOnStart: false
     packagesWithKeymapsDisabled: [
       "ex-mode"
     ]
@@ -64,6 +67,8 @@
     plugins:
       "git-diff": true
       "git-diffDecorationsZIndex": 0
+  "todo-show":
+    sortAscending: false
   "vim-mode": {}
   "vim-mode-plus":
     highlightSearch: true

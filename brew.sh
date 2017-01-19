@@ -42,6 +42,7 @@ brew cask install vagrant
 brew cask install intellij-idea
 brew cask install alfred
 brew cask install atom
+brew cask install licecap
 
 
 # Install LINE

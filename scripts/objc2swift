@@ -1,0 +1,9 @@
+#!/bin/bash
+
+f_path=$(cd $(dirname "$1") && pwd)/$(basename $1)
+
+CURRENT=$(cd $(dirname $0) && pwd)
+cd $CURRENT/../objc2swift
+
+
+java -jar /opt/objc2swift/build/libs/objc2swift-1.0.jar $f_path
