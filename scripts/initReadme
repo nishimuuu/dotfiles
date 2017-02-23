@@ -2,3 +2,9 @@
 
 CURRENT=$(cd $(dirname $0) && pwd)
 cp $CURRENT/README.md ./
+
+PROJECT_NAME=$(echo $CURRENT | awk -F "/" '{print $NF}')
+
+cat ./README.md | tr '<!--RepositoryName-->' $PROJECT_NAME > README.md
+
+

@@ -8,6 +8,7 @@ brew tap samueljohn/python
 brew tap homebrew/science
 brew tap phinze/cask
 brew tap phinze/homebrew-cask
+brew tap codeclimate/formulae
 
 
 brew install git
@@ -20,7 +21,7 @@ brew install npm
 brew install rbenv
 brew install ruby-build
 brew install mas
-
+brew install codeclimate
 
 brew cask install appcleaner
 brew cask install bettertouchtool
@@ -185,5 +186,5 @@ sudo pip install numpy scipy scikit-learn gensim pandas matplotlib jupyter noteb
 rbenv install 2.4.0
 rbenv global 2.4.0
 rbenv rehash
-sudo gem install bundler --no-ri --no-rdoc
+sudo gem install bundler cocoapods --no-ri --no-rdoc
 

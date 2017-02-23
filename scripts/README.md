@@ -1,4 +1,4 @@
-# <!-- リポジトリ名 -->
+# <!--RepositoryName-->
 
 <!-- CIのバッジステータスを記入 
 ![Badge Status](https://ci-as-a-service)

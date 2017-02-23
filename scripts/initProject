@@ -1,10 +1,14 @@
-#!/bin/bash
+#!/bin/bash -x
 
-mkdir script
-mkdir docs
-mkdir src
 
-touch README.md
+SCRIPTS_DIR='scripts'
+DOCS_DIR='docs'
+SRC_DIR='src'
+
+mkdir $SCRIPTS_DIR
+mkdir $DOCS_DIR
+mkdir	$SRC_DIR
+
 
 touch .gitignore
 touch .dockerignore
@@ -14,14 +18,23 @@ echo 'node_modules' >> .gitignore
 echo '.idea' >> .gitignore
 echo '.DS_Store' >> .gitignore
 
-touch script/bootstrap
-touch script/ci-build
-touch script/ci-deploy
-touch script/server
-touch script/console
-touch script/test
-touch script/build
-touch script/migrate
+SCRIPT_DEFAULT_CODES='#!/bin/sh -xe \
+CURRENT=$(cd $(dirname $0) && pwd) \
+cd $CURRENT/../src \
+'
+
+echo $SCRIPT_DEFAULT_CODES > scripts/bootstrap
+echo $SCRIPT_DEFAULT_CODES > scripts/ci-build
+echo $SCRIPT_DEFAULT_CODES > scripts/ci-deploy
+echo $SCRIPT_DEFAULT_CODES > scripts/server
+echo $SCRIPT_DEFAULT_CODES > scripts/console
+echo $SCRIPT_DEFAULT_CODES > scripts/test
+echo $SCRIPT_DEFAULT_CODES > scripts/build
+echo $SCRIPT_DEFAULT_CODES > scripts/migrate
+
+chmod +x scripts/*
+
+initReadme
 
 echo 'Created!'
 tree

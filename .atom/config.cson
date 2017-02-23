@@ -4,13 +4,13 @@
       {
         "kernelspecs": {
           "python2": {
-            "resource_dir": "/Users/01010357/.virtualenvs/main/lib/python2.7/site-packages/ipykernel/resources",
+            "resource_dir": "/Users/01010357/.virtualenvs/neon/lib/python2.7/site-packages/ipykernel/resources",
             "spec": {
               "language": "python",
               "display_name": "Python 2",
               "env": {},
               "argv": [
-                "/Users/01010357/.virtualenvs/main/bin/python2.7",
+                "/Users/01010357/.virtualenvs/neon/bin/python2.7",
                 "-m",
                 "ipykernel",
                 "-f",
@@ -52,6 +52,7 @@
       "one-dark-syntax"
     ]
   editor:
+    fontSize: 17
     showIndentGuide: true
     softWrap: true
     tabType: "soft"
