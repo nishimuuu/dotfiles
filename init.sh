@@ -13,3 +13,4 @@ ln -s $HOME/dotfiles/.vim .vim
 cd $HOME/dotfiles/
 sh brew.sh
 
+cp -R Xcode/ ~/Library/Developer/Xcode/
