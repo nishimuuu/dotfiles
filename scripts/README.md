@@ -37,6 +37,35 @@ For more information, see `awesome-tool -help`.
 
 ## Usage
 
+### init project to solve dependency
+
+`scripts/bootstrap`
+
+### build
+
+`scripts/build`
+
+### build on CI
+
+`scripts/ci-build`
+
+### deploy on CI
+
+`scripts/ci-deploy`
+
+### move to console
+
+`scripts/console`
+
+### run server 
+
+`scripts/server`
+
+### test
+
+`scripts/test`
+
+
 <!-- 利用方法をリスト形式で記述
 1. Usage
 2. Usage

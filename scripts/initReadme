@@ -1,10 +1,11 @@
-#!/bin/bash
+#!/bin/bash -x
 
 CURRENT=$(cd $(dirname $0) && pwd)
 cp $CURRENT/README.md ./
 
-PROJECT_NAME=$(echo $CURRENT | awk -F "/" '{print $NF}')
+PROJECT_NAME=$(echo $(pwd) | awk -F "/" '{print $NF}')
 
-cat ./README.md | tr '<!--RepositoryName-->' $PROJECT_NAME > README.md
+cat ./README.md | sed "s/<!--RepositoryName-->/$PROJECT_NAME/g" > ./README_tmp.md
+mv ./README_tmp.md README.md
 
 
