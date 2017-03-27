@@ -12,13 +12,22 @@ mkdir	$SRC_DIR
 mkdir	$ETC_DIR
 
 
+PROJECT_NAME=$(echo $(pwd) | awk -F "/" '{print $NF}')
+BIN_FILE_DIR=$HOME/project/$PROJECT_NAME
+mkdir $BIN_FILE_DIR
+ln -s $BIN_FILE_DIR files
+
+ln -s $(pwd) $BIN_FILE_DIR/codes
+
 touch .gitignore
 touch .dockerignore
+touch Dockerfile
 
 echo 'vendor/bundle' >> .gitignore
 echo 'node_modules' >> .gitignore
 echo '.idea' >> .gitignore
 echo '.DS_Store' >> .gitignore
+echo 'files' >> .gitignore
 
 SCRIPT_DEFAULT_CODES='#!/bin/sh -xe  \n
 CURRENT=$(cd $(dirname $0) && pwd)  \n
@@ -40,4 +49,3 @@ initReadme
 
 echo 'Created!'
 tree
-
