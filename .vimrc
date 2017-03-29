@@ -384,8 +384,8 @@ let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
 let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 
 " 補完候補表示中にバックスペースを押下すると、補完をキャンセルする
-inoremap <expr><C-h> pumvisible() ? neocomplcache#smart_close_popup().neocomplcache#undo_completion() : "\<C-h>"
-inoremap <expr><BS> pumvisible() ? neocomplcache#smart_close_popup().neocomplcache#undo_completion() : "\<C-h>"
+""inoremap <expr><C-h> pumvisible() ? neocomplcache#smart_close_popup().neocomplcache#undo_completion() : "\<C-h>"
+""inoremap <expr><BS> pumvisible() ? neocomplcache#smart_close_popup().neocomplcache#undo_completion() : "\<C-h>"
 
 "setting color
 syntax enable
@@ -488,8 +488,8 @@ endfunction
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+""'inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
+""inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 " Close popup by <Space>.
 "inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
 

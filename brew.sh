@@ -54,8 +54,6 @@ mas install 414855915
 mas install 417375580
 # Install Keynote
 mas install 409183694
-# Install ATOKPad
-mas install 460883588
 # Install Airmail
 mas install 918858936
 # Install Todoist
@@ -74,14 +72,10 @@ mas install 896624060
 mas install 443987910
 # Install Tweetbot
 mas install 557168941
-# Install Numbers
-mas install 409203825
 # Install Transmit
 mas install 403388562
 # Install Pages
 mas install 409201541
-# Install OmniFocus
-mas install 867299399
 # Install Marked
 mas install 448925439
 # Install Microsoft
