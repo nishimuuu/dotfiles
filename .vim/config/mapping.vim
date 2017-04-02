@@ -38,11 +38,6 @@ set pastetoggle=<C-p>
 :nnoremap q: <NOP>
 :nnoremap q/ <NOP>
 :nnoremap q? <NOP>
-inoremap { {}<LEFT>
-inoremap [ []<LEFT>
-inoremap ( ()<LEFT>
-inoremap " ""<LEFT>
-inoremap ' ''<LEFT>
 vnoremap { "zdi^V{<C-R>z}<ESC>
 vnoremap [ "zdi^V[<C-R>z]<ESC>
 vnoremap ( "zdi^V(<C-R>z)<ESC>

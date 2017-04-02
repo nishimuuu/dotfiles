@@ -191,4 +191,3 @@ RPROMPT='%1(v|%F{green}%1v(%~)'
   zstyle ':completion:*' menu select
   zstyle ':completion:*:cd:*' ignore-parents parent pwd
   zstyle ':completion:*:descriptions' format '%BCompleting%b %U%d%u'
-  export PATH=/usr/local/bin:$PATH

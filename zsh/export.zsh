@@ -80,7 +80,8 @@ fi
 #  export WORKON_HOME=$HOME/.virtualenvs
 #  source /Users/01010357/.pyenv/versions/3.5.1/bin/virtualenvwrapper.sh
 #fi
- export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_HOME=/usr/local/opt/android-sdk
 
+export PATH=/usr/local/bin:$PATH
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
