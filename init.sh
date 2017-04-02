@@ -1,17 +1,49 @@
+
+echo 
+echo '+------------------+'
+echo '| Create directory |'
+echo '+------------------+'
+echo
+
 mkdir $HOME/project $HOME/git $HOME/ss
-sudo mkdir -p /opt/myscript/
+sudo mkdir /opt/myscript/
+sudo cp -R $HOME/dotfiles/scripts/ /opt/myscript/
 
-cp .vim.zip /tmp/.vim.zip
+
+echo 
+echo '+-------------------+'
+echo '| Configure zsh/vim |'
+echo '+-------------------+'
+echo
+
 cd $HOME
-ln $HOME/dotfiles/.vimrc .vimrc
 ln $HOME/dotfiles/.zshrc .zshrc
-
-unzip $HOME/.vim.zip
-mv /tmp/.vim.zip $HOME/.vim.zip
-cd $HOME
+ln $HOME/dotfiles/.vimrc .vimrc
 ln -s $HOME/dotfiles/.vim .vim
 
+echo 
+echo '+---------------------+'
+echo '| install vim plugins |'
+echo '+---------------------+'
+echo
+vim
+
+echo 
+echo '+------------------------+'
+echo '| install cli/app in Mac |'
+echo '+------------------------+'
+echo
 cd $HOME/dotfiles/
 sh brew.sh
 
-cp -R Xcode/ ~/Library/Developer/Xcode/
+echo 
+echo '+----------------------------------------+'
+echo '| link github.com/nishimuuu/dotfiles.git |'
+echo '+----------------------------------------+'
+echo
+
+cd $HOME/dotfiles
+git init
+git remote add https://github.com/nishimuuu/dotfiles.git
+git reset hard --head
+

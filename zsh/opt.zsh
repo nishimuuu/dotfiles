@@ -69,6 +69,7 @@ unsetopt menu_complete          # 補完の際に、可能なリストを表示�
 unsetopt no_clobber             # リダイレクトで上書きを許可する
 unsetopt promptcr               # 改行のない出力をプロンプトで上書きするのを防ぐ
 unsetopt ignoreeof              # Ctrl+dでログアウト可能にする
+
 case "${OSTYPE}" in
   darwin9)
     alias ls="ls --color"

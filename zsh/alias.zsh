@@ -90,6 +90,8 @@ alias gp="git push"
 # Squid(HTTP Proxy)
 alias squid="squid -N"
 
+alias httpserver="python -mSimpleHTTPServer"
+
 
 ## 条件付きエイリアスの設定
 ##-----------------------

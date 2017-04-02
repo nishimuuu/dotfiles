@@ -80,8 +80,6 @@ fi
 #  export WORKON_HOME=$HOME/.virtualenvs
 #  source /Users/01010357/.pyenv/versions/3.5.1/bin/virtualenvwrapper.sh
 #fi
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
  export ANDROID_HOME=/usr/local/opt/android-sdk
 
 

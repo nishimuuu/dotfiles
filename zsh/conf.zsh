@@ -67,31 +67,6 @@ case "${OSTYPE}" in
 esac
 
 
-## プロンプトの設定
-##-----------------------
-
-# 記念日までの日数を計算し、右のプロンプトに表示する
-# OSXとGNUのdateは仕様が違うので注意
-#NOW_TIME=`date +%s`
-#case "${OSTYPE}" in
-#  darwin9)
-#      ANNIBERSARY_TIME=`date --date=20130930 +%s`
-#          ;;
-#	    darwin*)
-  #	        ANNIBERSARY_TIME=`date -jf "%Y-%m-%d" "2013-09-30" "+%s"`
-  #		    ;;
-#		      cygwin*|freebsd*|linux*)
-  #		          ANNIBERSARY_TIME=`date --date=20130930 +%s`
-  #			      ;;
-  #			      esac
-  #			      SEC=$[$ANNIBERSARY_TIME-$NOW_TIME]
-  #			      DAYS=$[ $SEC/60/60/24 ]
-
-  # 記念日を整形
-  # バージョン管理されている場所ではその情報を、
-  # そうでないところでは記念日までのカウントダウン
-  #ANNI_STR="%1(v|%{${fg[white]}%}%{${bg[cyan]}%}%1v%f|*INTERN'13 -> $DAYS days*)"
-
   # rootユーザー(uid=0)と一般ユーザーのプロンプトの色を区別する
   case ${UID} in
     0)
@@ -103,9 +78,15 @@ esac
       ;;
   esac
 
-  # 右プロンプトのディレクトリは256色をランダム
-  # show_colors でわかるよ
-  RPROMPT='%F{blue}[%~]'
+zstyle ':vcs_info:*' formats '[%b]'
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+precmd () {
+    psvar=()
+    LANG=en_US.UTF-8 vcs_info
+    [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
+}
+#RPROMPT='%F{magenta}[%~]'
+RPROMPT='%1(v|%F{green}%1v(%~)'
 
   # コマンドの自動訂正プロンプト
   # 文字が点滅するよ
