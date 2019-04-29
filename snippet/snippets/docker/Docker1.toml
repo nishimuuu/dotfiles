@@ -1,0 +1,9 @@
+[snippet]
+title = ';dockerinit'
+body = '''
+FROM __containername__
+
+MAINTAINER __name__
+'''
+syntax = 'None'
+tag = 'Docker'

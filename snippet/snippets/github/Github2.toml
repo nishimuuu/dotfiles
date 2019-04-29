@@ -1,0 +1,12 @@
+[snippet]
+title = ';pullreq'
+body = '''
+# やったこと 
+__how__ 
+
+# 対応するIssue 
+- [ ] __issue__ 
+
+'''
+syntax = 'None'
+tag = 'Github'

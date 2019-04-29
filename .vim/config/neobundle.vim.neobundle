@@ -1,0 +1,73 @@
+NeoBundle 'fatih/vim-go'
+NeoBundle 'elzr/vim-json'
+NeoBundle 'NLKNguyen/papercolor-theme'
+NeoBundle 'vim-airline/vim-airline'
+NeoBundle 'vim-airline/vim-airline-themes'
+NeoBundle 'Shougo/vimproc', {
+      \ 'build' : {
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
+
+NeoBundleLazy 'git://git.code.sf.net/p/vim-latex/vim-latex'
+NeoBundleLazy 'vim-scripts/Vim-R-plugin'
+NeoBundleLazy 'eravendew/screen'
+NeoBundleLazy 'derekwyatt/vim-scala'
+NeoBundleLazy 'Shougo/neobundle.vim'
+NeoBundleLazy 'thinca/vim-quickrun'
+NeoBundleLazy 'tpope/vim-markdown'
+NeoBundleLazy 'tpope/vim-markdown'
+
+NeoBundleLazy 'terryma/vim-multiple-cursors'
+if has("lua")
+  NeoBundleLazy 'Shougo/neocomplete', { 'autoload' : {
+        \   'insert' : 1,
+        \ }}
+endif
+
+NeoBundleLazy 'tpope/vim-rails', { 'autoload' : {
+      \ 'filetypes' : ['haml', 'ruby', 'eruby'] }}
+
+
+
+NeoBundleLazy 'alpaca-tc/neorspec.vim', {
+      \ 'depends' : ['alpaca-tc/vim-rails', 'tpope/vim-dispatch'],
+      \ 'autoload' : {
+      \   'commands' : ['RSpec', 'RSpecAll', 'RSpecCurrent', 'RSpecNearest', 'RSpecRetry']
+      \ }}
+
+NeoBundleLazy 'alpaca-tc/alpaca_tags', {
+      \ 'depends': 'Shougo/vimproc',
+      \ 'autoload' : {
+      \   'commands': ['TagsUpdate', 'TagsSet', 'TagsBundle']
+      \ }}
+
+NeoBundleLazy 'tsukkee/unite-tag', {
+      \ 'depends' : ['Shougo/unite.vim'],
+      \ 'autoload' : {
+      \   'unite_sources' : ['tag', 'tag/file', 'tag/include']
+      \ }}
+NeoBundleLazy "davidhalter/jedi-vim", {
+      \ "autoload": {
+      \   "filetypes": ["python", "python3", "djangohtml"],
+      \ },
+      \ "build": {
+      \   "mac": "pip install jedi",
+      \   "unix": "pip install jedi",
+      \ }}
+let s:hooks = neobundle#get_hooks("jedi-vim")
+
+function! s:hooks.on_source(bundle)
+  " jediにvimの設定を任せると'completeopt+=preview'するので
+  " 自動設定機能をOFFにし手動で設定を行う
+  let g:jedi#auto_vim_configuration = 0
+  " 補完の最初の項目が選択された状態だと使いにくいためオフにする
+  let g:jedi#popup_select_first = 0
+  " quickrunと被るため大文字に変更
+  let g:jedi#rename_command = '<Leader>R'
+  let g:jedi#goto_command = '<Leader>G'
+endfunction
+
+
+let g:airline_theme= 'term'

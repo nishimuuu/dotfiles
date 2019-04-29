@@ -1,0 +1,11 @@
+[snippet]
+title = ';rbdef'
+body = '''
+# __return__[__returntype__]
+def __name__ 
+
+end
+'''
+syntax = 'None'
+tag = 'Ruby'
+

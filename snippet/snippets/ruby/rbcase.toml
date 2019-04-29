@@ -1,0 +1,12 @@
+[snippet]
+title = ';rbcase'
+body = '''
+# __comment__ 
+case __var__ 
+  when __expr__
+  # default action
+  default
+end
+'''
+syntax = 'None'
+tag = 'Ruby'

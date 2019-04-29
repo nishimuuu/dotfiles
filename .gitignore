@@ -1,0 +1,7 @@
+.atom
+.DS_Store
+.vim/cache
+snippet/vendor
+snippet/Gemfile.lock
+snippet/snippets/scopeout
+

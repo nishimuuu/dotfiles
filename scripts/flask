@@ -1,0 +1,6 @@
+#!/bin/bash
+
+docker run -P -d -v $(pwd):/app nishimuuu/flask
+sleep 2
+port=$(docker ps -n 1 --format "{{.Ports}}" | sed 's/->.*\(tcp\)//' | sed 's/^.*://g')
+open http://localhost:$port

@@ -1,0 +1,8 @@
+[snippet]
+title = ';mdtable'
+body = '''| __h1__ | __h2__ | 
+| :--------------: | :----------------: | 
+| __b1__ | __b2__ | 
+'''
+syntax = 'None'
+tag = 'Markdown'

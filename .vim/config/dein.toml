@@ -1,0 +1,233 @@
+# ruby plugin
+[[plugins]]
+repo = 'tpope/vim-rails'
+
+[[plugins]]
+repo = 'osyo-manga/vim-monster'
+on_ft = 'ruby'
+[[plugins]]
+repo = 'vim-scripts/ruby.vim'
+on_ft = 'ruby'
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+# python plugin
+
+[[plugins]]
+repo = 'vim-scripts/python.vim'
+
+[[plugins]]
+repo = 'hynek/vim-python-pep8-indent'
+on_ft = 'python'
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
+on_ft = 'python'
+# javascript (ECMA script) plugin
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
+on_ft = 'coffee'
+
+[[plugins]]
+repo = 'alvan/vim-closetag'
+on_ft = ['jsx', 'html', 'xml']
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+on_ft = ['js', 'jsx']
+[[plugins]]
+repo = 'mxw/vim-jsx'
+on_ft = ['js', 'jsx']
+
+[[plugins]]
+repo = 'othree/yajs.vim'   
+on_ft = ['js', 'jsx']
+
+[[plugins]]
+repo = 'othree/es.next.syntax.vim'
+on_ft = ['js', 'jsx']
+
+[[plugins]]
+repo = 'myhere/vim-nodejs-complete'
+on_ft = ['js', 'jsx']
+
+[[plugins]]
+repo = 'scrooloose/syntastic'
+on_ft = ['js', 'jsx']
+
+[[plugins]]
+repo = 'osyo-manga/vim-watchdogs'  
+on_ft = ['js', 'jsx']
+
+# haml plugin
+[[plugins]]
+repo = 'tpope/vim-haml'
+on_ft = 'haml'
+
+# basic plugin
+
+[[plugins]]
+repo = 'thinca/vim-quickrun'
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
+
+[[plugins]]
+repo = 'Shougo/unite.vim'
+
+[[plugins]]
+repo = 'Shougo/vimfiler'
+
+[[plugins]]
+repo = 'vim-scripts/QuickBuf'
+
+[[plugins]]
+repo = 'vim-scripts/xterm16.vim'
+
+[[plugins]]
+repo = 'scrooloose/syntastic'
+
+[[plugins]]
+repo = 'kana/vim-fakeclip'
+[[plugins]]
+repo = 'lilydjwg/colorizer'
+
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+
+[[plugins]]
+repo = 'rizzatti/funcoo.vim'
+
+[[plugins]]
+repo = 'vim-airline/vim-airline'
+depends = ['vim-airline-themes']
+
+[[plugins]]
+repo = 'vim-airline/vim-airline-themes'
+
+[[plugins]] # toml syntax
+repo = 'cespare/vim-toml'
+on_ft = 'toml'
+
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+[[plugins]]
+repo = 'jistr/vim-nerdtree-tabs'
+
+[[plugins]]
+repo = 'Xuyuanp/nerdtree-git-plugin'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'
+
+[[plugins]]
+repo = 'tyru/caw.vim'
+
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+
+[[plugins]]
+repo = 'Townk/vim-autoclose'
+
+[[plugins]]
+repo = 'AndrewRadev/switch.vim'
+
+[[plugins]]
+repo = 'ujihisa/neco-look'
+
+[[plugins]]
+repo = 'rhysd/github-complete.vim'
+
+[[plugins]]
+repo = 'Shougo/neco-syntax'
+
+[[plugins]]
+repo = 'ekalinin/Dockerfile.vim'
+
+[[plugins]]
+repo = 'maverickg/stan.vim'
+on_ft = ['stan']
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+on_event = 'InsertCharPre'
+hook_source = '''
+  let g:deoplete#enable_at_startup = 1
+  let g:deoplete#auto_complete_delay = 0
+  let g:deoplete#auto_complete_start_length = 1
+  let g:deoplete#enable_camel_case = 0
+  let g:deoplete#enable_ignore_case = 0
+  let g:deoplete#enable_refresh_always = 0
+  let g:deoplete#enable_smart_case = 1
+  let g:deoplete#file#enable_buffer_path = 1
+  let g:deoplete#max_list = 10000
+  inoremap <expr><tab> pumvisible() ? "\<C-n>" :
+        \ neosnippet#expandable_or_jumpable() ?
+        \    "\<Plug>(neosnippet_expand_or_jump)" : "\<tab>"
+'''
+on_i = 1
+
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'
+
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'Shougo/neosnippet'
+
+[[plugins]]
+repo = 'honza/vim-snippets'
+
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+
+[[plugins]]
+repo = 'Shougo/neco-vim'
+
+[[plugins]]
+repo = 'ervandew/supertab'
+
+[[plugins]]
+repo = 'hashivim/vim-terraform'
+
+[[plugins]]
+repo = 'vim-syntastic/syntastic'
+
+[[plugins]]
+repo = 'juliosueiras/vim-terraform-completion'
+
+[[plugins]]
+repo = 'tell-k/vim-autopep8'
+on_ft = 'python'
+
+[[plugins]]
+repo = 'elzr/vim-json'
+on_ft = 'json'
+
+[[plugins]]
+repo = 'integralist/vim-mypy'
+on_ft = 'python'
+
+[[plugins]]
+repo = 'szw/vim-tags'
+
+[[plugins]]
+repo = 'majutsushi/tagbar'
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+on_ft = 'ruby'
+
+[[plugins]]
+repo = 'gko/vim-coloresque'
+
+[[plugins]]
+repo = 'hail2u/vim-css3-syntax'
+on_ft = ['css', 'sass', 'scss']
+
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+
+
