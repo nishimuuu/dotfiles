@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo 
+echo
 echo '+------------------+'
 echo '| Create directory |'
 echo '+------------------+'
@@ -11,7 +11,7 @@ sudo mkdir /opt/myscript/
 sudo cp -R $HOME/dotfiles/scripts/ /opt/myscript/
 
 
-echo 
+echo
 echo '+-------------------+'
 echo '| Configure zsh/vim |'
 echo '+-------------------+'
@@ -22,14 +22,14 @@ ln $HOME/dotfiles/.zshrc .zshrc
 ln $HOME/dotfiles/.vimrc .vimrc
 ln -s $HOME/dotfiles/.vim .vim
 
-echo 
+echo
 echo '+---------------------+'
 echo '| install vim plugins |'
 echo '+---------------------+'
 echo
 vim
 
-echo 
+echo
 echo '+------------------------+'
 echo '| install cli/app in Mac |'
 echo '+------------------------+'
@@ -46,7 +46,7 @@ cd $HOME/dotfiles/bootstrap_scripts
 ./install_python_libs.sh
 ./install_ruby_libs.sh
 
-echo 
+echo
 echo '+----------------------------------------+'
 echo '| link github.com/nishimuuu/dotfiles.git |'
 echo '+----------------------------------------+'
@@ -54,11 +54,12 @@ echo
 
 cd $HOME/dotfiles
 git init
-git remote add https://github.com/nishimuuu/dotfiles.git
-git reset hard --head
+git remote add origin https://github.com/nishimuuu/dotfiles.git
+git fetch
+git reset hard --head origin/master
 
 
-echo 
+echo
 echo '+---------------+'
 echo '| Install fonts |'
 echo '+---------------+'
