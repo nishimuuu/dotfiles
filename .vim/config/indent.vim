@@ -17,7 +17,5 @@ let g:indentLine_faster = 1
 nmap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 
 let g:terraform_fmt_on_save = 1
-let g:autopep8_on_save = 1
-
-
+au BufWrite * :Autoformat
 

@@ -1,6 +1,4 @@
 
-export PATH="$HOME/.rbenv/bin:$PATH"↓
-export PATH="$HOME/Library/Haskell/bin:$PATH"
 
 # z
 # . `brew --prefix`/etc/profile.d/z.sh
@@ -61,11 +59,6 @@ case "${TERM}" in
 esac
 export GEM_HOME=/opt/local/lib/ruby/gems/2.0
 export RUBYLIB=/opt/local/lib/ruby/gems/2.0
-export PATH=$PATH:/var/lib/gems/2.0/bin
-export PATH=$PATH:/usr/texbin
-export PATH=$PATH:/Library/TeX/texbin
-export PATH=$PATH:/opt/myscript
-export PATH="$HOME/.pyenv/bin:$PATH"
 
 eval "$(pyenv init -)"
 eval "$(rbenv init -)"
@@ -79,10 +72,19 @@ fi
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
-export PATH=/usr/local/bin:$PATH
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export GOPATH=$HOME/.go
-export PATH=$PATH:$GOPATH/bin
 export DASH_SNIPPET_PATH="$HOME/Library/Mobile Documents/com~apple~CloudDocs/dash/snippet.dash"
 export LOG_LEVEL="DEBUG"
 export NEOSNNIPET_PATH="~/.cache/dein/repos/github.com/Shougo/neosnippet-snippets/neosnippets"
+
+export PATH=/usr/local/bin:$PATH
+export PATH=$PATH:/var/lib/gems/2.0/bin
+export PATH=$PATH:/usr/texbin
+export PATH=$PATH:/Library/TeX/texbin
+export PATH=$PATH:$HOME/Library/Haskell/bin
+export PATH="$HOME/.pyenv/bin:$PATH"
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/opt/myscript
+export PATH=$PATH:$HOME/.rbenv/bin
+export PATH=$PATH:$HOME/.rbenv/shims

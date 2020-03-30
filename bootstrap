@@ -45,6 +45,7 @@ cd $HOME/dotfiles/bootstrap_scripts
 ./install_node_libs.sh
 ./install_python_libs.sh
 ./install_ruby_libs.sh
+./install_formatter.sh
 
 echo
 echo '+----------------------------------------+'

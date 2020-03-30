@@ -12,3 +12,4 @@ brew install ruby-build
 brew install mas
 brew install codeclimate
 brew install ctags
+brew install go

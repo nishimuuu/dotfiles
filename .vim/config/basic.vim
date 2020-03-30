@@ -3,7 +3,8 @@
 "基本設定
 "----------------------------------------------------------
 set enc=utf-8
-set encoding=utf-8
+set encoding=UTF-8
+
 set termencoding=utf-8
 set fileencodings=utf-8,ucs-bom,euc-jp,cp932,iso-2022-jp
 set fileformat=unix
@@ -24,7 +25,7 @@ set ruler                      " カーソルが何行目の何列目に置か�
 set wildmenu                   " コマンド補完を強化
 set wildchar=<tab>             " コマンド補完を開始するキー
 set wildmode=list:full         " リスト表示，最長マッチ
-set complete+=k	               " 補完に辞書ファイル追加
+set complete+=k                " 補完に辞書ファイル追加
 set wrapscan                   " 最後まで検索したら先頭へ戻る
 set ignorecase                 " 大文字小文字無視
 set smartcase                  " 大文字ではじめたら大文字小文字無視しない

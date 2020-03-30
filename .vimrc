@@ -12,7 +12,7 @@ runtime! config/indent.vim
 
 " 補完の設定
 "
-" 
+"
 runtime! config/complete.vim
 runtime! config/complete-ruby.vim
 runtime! config/complete-python.vim

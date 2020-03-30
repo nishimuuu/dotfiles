@@ -5,5 +5,5 @@
 rbenv install 2.4.0
 rbenv global 2.4.0
 rbenv rehash
-sudo gem install bundler cocoapods --no-ri --no-rdoc
+sudo gem install bundler cocoapods rubocop --no-ri --no-rdoc
 

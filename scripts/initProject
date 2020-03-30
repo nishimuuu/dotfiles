@@ -8,8 +8,12 @@ ETC_DIR='etc'
 
 mkdir $SCRIPTS_DIR
 mkdir $DOCS_DIR
-mkdir	$SRC_DIR
-mkdir	$ETC_DIR
+mkdir $SRC_DIR
+mkdir $ETC_DIR
+
+touch $DOCS_DIR/.gitkeep
+touch $SRC_DIR/.gitkeep
+touch $ETC_DIR/.gitkeep
 
 
 PROJECT_NAME=$(echo $(pwd) | awk -F "/" '{print $NF}')
