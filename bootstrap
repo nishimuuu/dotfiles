@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+xcode-select --install
+
 echo
 echo '+------------------+'
 echo '| Create directory |'

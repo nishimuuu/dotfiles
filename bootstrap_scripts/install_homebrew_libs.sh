@@ -25,3 +25,4 @@ brew install poetry
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 brew install terraform
+brew install vim
