@@ -1,0 +1,5 @@
+[snippet]
+title = ';mdcheckbox'
+body = '- [ ] __content__'
+syntax = 'None'
+tag = 'Markdown'

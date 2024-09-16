@@ -1,0 +1,5 @@
+[snippet]
+title = ';mdcode'
+body = '``` \n\n __code__ \n\n ```'
+syntax = 'None'
+tag = 'Markdown'

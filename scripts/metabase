@@ -1,0 +1,54 @@
+#!/bin/bash
+
+pull_and_labeled(){
+    docker pull metabase/metabase
+    image_id=$(docker run -P -d metabase/metabase)
+    docker commit $image_id nishimuuu/metabase
+    exit
+}
+
+open_remote(){
+  open https://nishimuuu.itemo.recruit-jinji.jp
+  exit
+}
+
+run_local(){
+  
+  count=$(docker images --filter 'reference=metabase/metabase' | wc -l)
+  
+  if [ $count = 0 ]; then
+    pull_and_labeled
+  fi
+
+
+  count=$(docker ps --filter 'ancestor=nishimuuu/metabase' | grep -v grep | wc -l)
+  if [ $count = 0 ]; then
+    docker run -P -d nishimuuu/metabase
+    sleep 2
+  fi
+
+  port=$(docker ps --filter 'ancestor=nishimuuu/metabase' -n 1 --format "{{.Ports}}" | sed 's/->.*\(tcp\)//' | sed 's/^.*://g')
+  open http://localhost:$port
+
+}
+
+log_local(){
+  id=$(docker ps --filter 'ancestor=nishimuuu/metabase' -n 1 --format "{{.ID}}")
+  docker logs $id
+  exit
+}
+
+
+while getopts rl OPT
+do
+  case $OPT in
+    r)  open_remote
+      ;;
+    l)  log_local
+      ;;
+  esac
+done
+
+run_local
+
+

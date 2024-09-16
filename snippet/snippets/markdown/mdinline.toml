@@ -1,0 +1,5 @@
+[snippet]
+title = ';mdinline'
+body = '` __code__ `'
+syntax = 'None'
+tag = 'Markdown'

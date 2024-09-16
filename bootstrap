@@ -1,0 +1,75 @@
+#!/bin/bash
+
+echo
+echo '+------------------+'
+echo '| Create directory |'
+echo '+------------------+'
+echo
+
+mkdir $HOME/project $HOME/git $HOME/ss
+sudo mkdir /opt/myscript/
+sudo cp -R $HOME/dotfiles/scripts/ /opt/myscript/
+
+
+echo
+echo '+-------------------+'
+echo '| Configure zsh/vim |'
+echo '+-------------------+'
+echo
+
+cd $HOME
+ln $HOME/dotfiles/.zshrc .zshrc
+ln $HOME/dotfiles/.vimrc .vimrc
+ln -s $HOME/dotfiles/.vim .vim
+
+echo
+echo '+---------------------+'
+echo '| install vim plugins |'
+echo '+---------------------+'
+echo
+vim
+
+echo
+echo '+------------------------+'
+echo '| install cli/app in Mac |'
+echo '+------------------------+'
+echo
+cd $HOME/dotfiles/bootstrap_scripts
+./edit_defaults_command.sh
+./install_homebrew.sh
+./tap_homebrew.sh
+./install_homebrew_libs.sh
+./install_homebrew_cask_apps.sh
+./install_Appstore_apps.sh
+./install_atom_package.sh
+./install_node_libs.sh
+./install_python_libs.sh
+./install_ruby_libs.sh
+./install_formatter.sh
+
+echo
+echo '+----------------------------------------+'
+echo '| link github.com/nishimuuu/dotfiles.git |'
+echo '+----------------------------------------+'
+echo
+
+cd $HOME/dotfiles
+git init
+git remote add origin https://github.com/nishimuuu/dotfiles.git
+git fetch
+git reset hard --head origin/master
+
+
+echo
+echo '+---------------+'
+echo '| Install fonts |'
+echo '+---------------+'
+echo
+echo 'Installer will be open'
+
+sleep 3
+
+cd $HOME/dotfiles/fonts
+open *
+
+

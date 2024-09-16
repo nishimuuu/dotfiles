@@ -1,0 +1,5 @@
+[snippet]
+title = ';mdlink'
+body = '[__name__](__link__)'
+syntax = 'None'
+tag = 'Markdown'

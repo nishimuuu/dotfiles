@@ -1,0 +1,5 @@
+[snippet]
+title = ';mdstrike'
+body = '~__text__~'
+syntax = 'None'
+tag = 'Markdown'

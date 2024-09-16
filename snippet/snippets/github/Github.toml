@@ -1,0 +1,13 @@
+[snippet]
+title = ';issue'
+body = '''
+# WHY 
+__why__ 
+
+# WHAT 
+__what__
+
+'''
+syntax = 'None'
+tag = 'Github'
+
