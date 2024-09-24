@@ -1,0 +1,67 @@
+tap "codeclimate/formulae"
+tap "hashicorp/tap"
+tap "homebrew/bundle"
+brew "autoconf"
+brew "automake"
+brew "openssl@3"
+brew "awscli"
+brew "ctags"
+brew "direnv"
+brew "docker-clean"
+brew "freetype"
+brew "gh"
+brew "git"
+brew "go"
+brew "htop"
+brew "jq"
+brew "libtool"
+brew "mas"
+brew "nkf"
+brew "node"
+brew "perl"
+brew "python@3.12"
+brew "poetry"
+brew "postgresql@14"
+brew "pyenv"
+brew "ruby-build"
+brew "rbenv"
+brew "tree"
+brew "vercel-cli", link: false
+brew "vim"
+brew "watch"
+brew "wget"
+brew "zsh-autosuggestions"
+brew "hashicorp/tap/terraform"
+cask "alfred"
+cask "appcleaner"
+cask "atom"
+cask "bettertouchtool"
+cask "coteditor"
+cask "cursor"
+cask "cyberduck"
+cask "eclipse-ide"
+cask "eclipse-platform"
+cask "google-cloud-sdk"
+cask "google-japanese-ime"
+cask "intellij-idea"
+cask "licecap"
+cask "omnigraffle"
+cask "r"
+cask "rstudio"
+cask "sequel-pro"
+cask "skype"
+cask "sourcetree"
+cask "vagrant"
+mas "1Password", id: 443987910
+mas "Alfred", id: 405843582
+mas "BetterSnapTool", id: 417375580
+mas "Keynote", id: 409183694
+mas "Marked", id: 448925439
+mas "MenuBar Stats", id: 714196447
+mas "Microsoft Remote Desktop", id: 715768417
+mas "OmniPlan", id: 1040002810
+mas "Pages", id: 409201541
+mas "Skitch", id: 425955336
+mas "Slack", id: 803453959
+mas "The Unarchiver", id: 425424353
+mas "Transmit", id: 403388562

@@ -11,3 +11,4 @@ brew install --cask  alfred
 brew install --cask  licecap
 brew install --cask  tableplus
 brew install --cask  docker
+brew install --cask visual-studio-code

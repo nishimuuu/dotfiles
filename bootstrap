@@ -42,9 +42,9 @@ cd $HOME/dotfiles/bootstrap_scripts
 ./install_homebrew.sh
 ./tap_homebrew.sh
 ./install_homebrew_libs.sh
-./install_homebrew_cask_apps.sh
+#./install_homebrew_cask_apps.sh
 ./install_Appstore_apps.sh
-./install_atom_package.sh
+#./install_atom_package.sh
 ./install_node_libs.sh
 ./install_python_libs.sh
 ./install_ruby_libs.sh
